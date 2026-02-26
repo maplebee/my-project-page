@@ -316,10 +316,11 @@
 
 <!-- Teaser video-->
 <section class="hero teaser">
-  <div class="columns">
-    <div class="columns">
-      <video controls width="100%">
-     <!-- TODO: Add your video file path here -->
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- TODO: Replace with your teaser video -->
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <!-- TODO: Add your video file path here -->
         <source src="static/videos/demo.mp4" type="video/mp4">
       </video>
       <!-- TODO: Replace with your video description -->
@@ -327,15 +328,39 @@
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
       </h2>
     </div>
-    <div class="column">
-    <video controls width="100%">
-      <source src="static/videos/demo.mp4" type="video/mp4">
-    </video>
-  </div>
   </div>
 </section>
 <!-- End teaser video -->
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns">
+
+      <!-- 左边视频 -->
+      <div class="column">
+        <video controls width="100%">
+          <source src="static/videos/demo.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- 右边视频 -->
+      <div class="column">
+        <video controls width="100%">
+          <source src="static/videos/demo.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+
+    <!-- 视频说明 -->
+    <h2 class="subtitle has-text-centered" style="margin-top:20px;">
+      This is my side-by-side video comparison.
+    </h2>
+
+  </div>
+</section>
+
+    
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
